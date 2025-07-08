@@ -1,0 +1,14 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Docker
+*.tar
+*.img
+
+# Logs
+*.log
+
+# Archivos temporales de editores
+.vscode/
+*.swp
