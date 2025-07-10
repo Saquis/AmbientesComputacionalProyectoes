@@ -1,37 +1,112 @@
-<!-- index.html -->
-
-<!-- German Del Rio -->
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Informativa</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
     <header>
-        <h1>Bienvenido a Nuestra Página Informativa</h1>
+        <div id="saludo"></div>
+        <h1 id="titulo-final">Nuestra Pagina Informativa</h1>
     </header>
     <main>
-        <section>
-            <h2>¿Quiénes Somos?</h2>
-            <p>Somos una organización dedicada a brindar información útil sobre diversos temas.</p>
+        <div>
+            <h2>¿Qué es el alojamiento WEB?</h2>
+            <p>El alojamiento web, también conocido como hosting, es un servicio que permite a los usuarios almacenar
+                los archivos y datos de su sitio web en un servidor para que sea accesible a través de internet. Es como
+                alquilar un espacio en un edificio donde se guarda toda la información de tu sitio web para que otros
+                puedan visitarlo. </p>
             <img src="image/imagen1.jpg" alt="Descripción de la imagen 1">
-        </section>
-        <section>
-            <h2>Nuestros Servicios</h2>
-            <p>Ofrecemos una variedad de servicios para ayudar a nuestra comunidad.</p>
+        </div>
+        <div>
+            <h2>ALOJAMIENTOS WEB GRATUITOS</h2>
+            <p>Ofrecemos una variedad de servicios para ayudar a nuestra comunidad, incluyendo opciones para que tu
+                sitio web esté en línea. Los **alojamientos web gratuitos** son un excelente punto de partida para
+                proyectos personales o para aprender, aunque suelen tener ciertas limitaciones.</p>
             <img src="image/imagen2.png" alt="Descripción de la imagen 2">
-        </section>
-        <section>
+
+            <hr>
+            <h3>Opciones de Alojamiento Web</h3>
+
+            <h4>Gratuitos (Ideales para empezar o proyectos pequeños):</h4>
+            <ul>
+                <li>
+                    <strong><a href="https://www.000webhost.com/" target="_blank" rel="noopener noreferrer">000webhost
+                            (de Hostinger)</a>:</strong> Genial para principiantes, soporta PHP y MySQL. Ofrece un buen
+                    equilibrio entre características y gratuidad, sin anuncios forzados en tu sitio.
+                </li>
+                <li>
+                    <strong><a href="https://infinityfree.net/" target="_blank"
+                            rel="noopener noreferrer">InfinityFree</a>:</strong> Promete alojamiento "totalmente
+                    gratuito para siempre", con recursos generosos para sitios personales y pequeños.
+                </li>
+                <li>
+                    <strong><a href="https://www.netlify.com/" target="_blank"
+                            rel="noopener noreferrer">Netlify</a>:</strong> Perfecto para sitios web estáticos (HTML,
+                    CSS, JS, frameworks), con despliegue rápido y directamente desde repositorios de Git.
+                </li>
+                <li>
+                    <strong><a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub
+                            Pages</a>:</strong> Ideal para documentar proyectos, portafolios o sitios de código abierto,
+                    directamente desde tu repositorio de GitHub.
+                </li>
+            </ul>
+
+            <h4>De Pago (Recomendados para proyectos serios y profesionales):</h4>
+            <p>Si buscas fiabilidad, mayor rendimiento, escalabilidad, soporte técnico dedicado y tu propio dominio, un
+                servicio de pago es la mejor inversión.</p>
+            <ul>
+                <li>
+                    <strong><a href="https://www.hostinger.es/" target="_blank"
+                            rel="noopener noreferrer">Hostinger</a>:</strong> Ofrece una excelente relación
+                    calidad-precio, con planes optimizados para WordPress y una interfaz de usuario muy intuitiva.
+                </li>
+                <li>
+                    <strong><a href="https://www.siteground.es/" target="_blank"
+                            rel="noopener noreferrer">SiteGround</a>:</strong> Conocido por su rendimiento superior,
+                    seguridad robusta y un soporte al cliente de primera clase, ideal para proyectos exigentes.
+                </li>
+                <li>
+                    <strong><a href="https://www.bluehost.com/" target="_blank"
+                            rel="noopener noreferrer">Bluehost</a>:</strong> Una opción popular y recomendada
+                    oficialmente por WordPress.org, fácil de usar para principiantes.
+                </li>
+                <li>
+                    <strong><a href="https://raiolanetworks.es/" target="_blank" rel="noopener noreferrer">Raiola
+                            Networks</a>:</strong> Para usuarios en España y Latinoamérica, ofrece buen rendimiento y
+                    soporte en español.
+                </li>
+            </ul>
+            <p>Evalúa tus necesidades para elegir la opción que mejor se ajuste a tu proyecto. Los servicios de pago
+                ofrecen un control y rendimiento mucho mayores a medida que tu sitio crece.</p>
+
+        </div>
+        <div>
             <h2>Contacto</h2>
             <p>Puedes contactarnos a través de nuestro correo electrónico: contacto@pginformativa.com</p>
-        </section>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2025 Nuestra Pagina Informativa</p>
+        <h2 id="texto-hora">HORA ACTUAL</h2>
+        <div id="reloj">Cargando reloj...</div>
+        <h2 id="texto-fecha">FECHA DE HOY</h2>
+        <div id="fecha">Cargando fecha...</div>
+        <p>&copy; 2025 - TODOS LOS DERECHOS RESERVADOS</p>
+        <script>
+            // Llama a las funciones cuando el DOM esté completamente cargado
+            document.addEventListener('DOMContentLoaded', () => {
+                mostrarReloj();
+                mostrarFechaActual();
+                // Establece la fecha objetivo en formato "Año-Mes-Día Hora:Minuto:Segundo"
+                mostrarSaludoPersonalizado('saludo');
+            });
+        </script>
     </footer>
 </body>
+
 </html>

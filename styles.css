@@ -1,46 +1,136 @@
 body {
+    /* Tu fondo degradado original */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: #aa4b6b;
+    background: -webkit-linear-gradient(to bottom, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to bottom, #3b8d99, #6b6b83, #aa4b6b);
+    color: #222;
+    /* texto general un poco más oscuro para mejor lectura */
 }
 
 header {
-    background: #35424a;
+    background: transparent;
     color: #ffffff;
-    padding: 10px 0;
+    padding: 20px 0;
+    /* un poco más de padding para dar espacio */
     text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    /* para que el texto resalte en el fondo */
 }
 
 main {
     padding: 20px;
+    max-width: 900px;
+    /* para que el contenido no sea demasiado ancho */
+    margin: 0 auto;
+    /* centrar contenido */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* fondo blanco semitransparente para mejor lectura */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    /* párrafos alineados a la izquierda para mejor lectura */
 }
 
-section {
-    margin-bottom: 20px;
-    background: #ffffff;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+main div {
+    margin-bottom: 40px;
+    /* separación entre secciones */
 }
 
-h1, h2 {
-    color: #35424a;
+h1,
+h2 {
+    color: #07075a;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+h3 {
+    color: #000000;
+    /* tono azul para destacar subtítulos */
+    margin-top: 25px;
+}
+
+h4 {
+    color: #07075a;
+    /* más suave para subtítulos menores */
+    margin-top: 15px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #000000;
 }
 
 img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    text-align: left;
+    /* para que las listas se alineen a la izquierda */
+    padding-left: 20px;
+    color: #000000;
+}
+
+a {
+    color: #0b54db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #35424a;
-    color: #ffffff;
+    padding: 20px 0;
+    color: #000000;
     position: relative;
     bottom: 0;
     width: 100%;
 }
-        
+
+#reloj {
+    font-size: 100px;
+    font-weight: bold;
+    color: #093f86;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#fecha {
+    font-size: 40px;
+    color: #093f86;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+#saludo {
+    font-size: 80px;
+    color: #28a745;
+    font-weight: 600;
+    margin-top: 15px;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.9);
+}
+
+#titulo-final {
+    font-size: 90px;
+    margin-top: 0;
+    color: #1e2f3f;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+#texto-hora,
+#texto-fecha {
+    font-size: 50px;
+}
