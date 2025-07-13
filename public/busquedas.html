@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles_busqueda.css"> <!-- Asegúrate de enlazar el CSS -->
+    <title>Búsqueda de Mascotas</title>
+</head>
+<body>
+
+<div id="busqueda-container">
+    <h2>Buscar Mascotas</h2>
+    <form id="busqueda-form">
+        <input type="text" id="especie" placeholder="Especie" />
+        <input type="text" id="raza" placeholder="Raza" />
+        <input type="number" id="edad" placeholder="Edad" />
+        <select id="genero">
+            <option value="">Género</option>
+            <option value="Macho">Macho</option>
+            <option value="Hembra">Hembra</option>
+        </select>
+        <select id="busca">
+            <option value="">Busca</option>
+            <option value="Amigos">Amigos</option>
+            <option value="Reproducción">Reproducción</option>
+        </select>
+        <input type="number" id="likes" placeholder="Likes mínimo" />
+        <button type="submit">Buscar</button>
+    </form>
+
+    <div id="resultados-busqueda"></div>
+</div>
+
+<script src="js/busquedas.js"></script> <!-- Asegúrate de incluir tu script -->
+</body>
+</html>

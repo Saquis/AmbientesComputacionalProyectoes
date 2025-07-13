@@ -1,3 +1,10 @@
+# Aplicativo
+uploads/
+
+# Node
+node_modules/
+package-lock.json
+
 # Archivos del sistema
 .DS_Store
 Thumbs.db

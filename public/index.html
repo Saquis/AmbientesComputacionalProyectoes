@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Matcher - Login</title>
+    <link rel="stylesheet" href="css/styles_login.css">
+</head>
+<body>
+    <section id="login">
+        <h1>Iniciar Sesión</h1>
+        <form id="login-form">
+            <input type="email" id="login-email" placeholder="Correo Electrónico" required>
+            <input type="password" id="login-password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <p><a href="#" id="open-register">Registrarse</a></p>
+    </section>
+
+    <!-- Modal de Registro -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Registro de Usuario</h2>
+            <form id="register-form">
+                <input type="text" id="register-nombre" placeholder="Nombre" required>
+                <input type="email" id="register-email" placeholder="Correo Electrónico" required>
+                <input type="password" id="register-password" placeholder="Contraseña" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

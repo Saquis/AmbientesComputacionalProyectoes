@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Matcher - Menú Principal</title>
+    <link rel="stylesheet" href="css/styles_main.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Pet Matcher</h1>
+      <nav>
+        <ul class="menu">
+          <li id="menu-mascotas"><a href="#">Perfil de Mascotas</a></li>
+          <li><a href="busquedas.html" target="_blank">Búsquedas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>¡Bienvenido a Pet Matcher!</h2>
+      <p>
+        Aquí puedes gestionar el perfil de tus mascotas y buscar nuevas
+        amistades o parejas para ellas.
+      </p>
+    </main>
+
+    <section id="mascotas">
+      <h2>Mascotas Registradas</h2>
+      <div class="mascotas-grid" id="mascotas-grid">
+        <!-- Aquí se mostrarán las mascotas -->
+      </div>
+
+      <!-- Modal de Detalle de Mascota -->
+      <div id="mascotaModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="modal-nombre"></h2>
+          <p><strong>Especie:</strong> <span id="modal-especie"></span></p>
+          <p><strong>Raza:</strong> <span id="modal-raza"></span></p>
+          <p><strong>Edad:</strong> <span id="modal-edad"></span> años</p>
+          <p><strong>Género:</strong> <span id="modal-genero"></span></p>
+          <p>
+            <strong>Descripción:</strong> <span id="modal-descripcion"></span>
+          </p>
+          <p><strong>Busca:</strong> <span id="modal-busca"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal para Registro de Mascotas -->
+    <div id="mascota-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-mascota-modal">&times;</span>
+        <h2>Registrar Mascota</h2>
+        <form id="mascota-form">
+          <label for="mascota-nombre">Nombre:</label>
+          <input type="text" id="mascota-nombre" required />
+
+          <label for="mascota-especie">Especie:</label>
+          <input type="text" id="mascota-especie" required />
+
+          <label for="mascota-raza">Raza:</label>
+          <input type="text" id="mascota-raza" required />
+
+          <label for="mascota-edad">Edad:</label>
+          <input type="number" id="mascota-edad" required />
+
+          <label for="mascota-genero">Género:</label>
+          <select id="mascota-genero" required>
+            <option value="Macho">Macho</option>
+            <option value="Hembra">Hembra</option>
+          </select>
+
+          <label for="mascota-descripcion">Descripción:</label>
+          <textarea id="mascota-descripcion" required></textarea>
+
+          <label for="mascota-foto">Foto:</label>
+          <input type="file" id="mascota-foto" accept="image/*" required />
+
+          <label for="mascota-busca">Busca:</label>
+          <select id="mascota-busca" required>
+            <option value="Amigos">Amigos</option>
+            <option value="Reproducción">Reproducción</option>
+          </select>
+
+          <button type="submit">Registrar Mascota</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal para Editar Mascota -->
+    <div id="editar-mascota-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-editar-modal">&times;</span>
+        <h2>Editar Mascota</h2>
+        <form id="editar-mascota-form" enctype="multipart/form-data">
+          <input type="hidden" id="editar-mascota-id" />
+
+          <label for="editar-nombre">Nombre:</label>
+          <input type="text" id="editar-nombre" required />
+
+          <label for="editar-especie">Especie:</label>
+          <input type="text" id="editar-especie" required />
+
+          <label for="editar-raza">Raza:</label>
+          <input type="text" id="editar-raza" required />
+
+          <label for="editar-edad">Edad:</label>
+          <input type="number" id="editar-edad" required />
+
+          <label for="editar-genero">Género:</label>
+          <select id="editar-genero" required>
+            <option value="Macho">Macho</option>
+            <option value="Hembra">Hembra</option>
+          </select>
+
+          <label for="editar-descripcion">Descripción:</label>
+          <textarea id="editar-descripcion" required></textarea>
+
+          <label for="editar-busca">Busca:</label>
+          <select id="editar-busca" required>
+            <option value="Amigos">Amigos</option>
+            <option value="Reproducción">Reproducción</option>
+          </select>
+
+          <label for="editar-foto">Foto:</label>
+          <input type="file" id="editar-foto" accept="image/*" />
+
+          <button type="submit">Guardar Cambios</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/mascotas.js"></script>
+  </body>
+</html>
