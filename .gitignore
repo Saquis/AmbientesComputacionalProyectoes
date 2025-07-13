@@ -1,5 +1,6 @@
 # Aplicativo
-uploads/
+uploads/*
+!uploads/.gitkeep
 
 # Node
 node_modules/
