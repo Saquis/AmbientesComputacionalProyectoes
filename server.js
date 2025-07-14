@@ -9,6 +9,7 @@ const cors = require('cors');
 const path = require('path');
 
 const multer = require('multer');
+ // const { use } = require('react'); Importante si requiere para utilizar 'react' descomentar esta linea
 const app = express();
 const uri = 'mongodb://localhost:27017';
 const client = new MongoClient(uri);
@@ -24,11 +25,13 @@ app.use('/uploads', express.static('uploads'));
 
 
 // Conexión a MongoDB
-mongoose.connect('mongodb://192.168.100.49:27017/pet-matcher', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
+mongoose.connect('mongodb://host.docker.internal:27017/pet-matcher', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+.then(() => console.log("Conectado a MongoDB"))
+.catch(err => console.error("Error de conexión:", err));
+ 
 // Definir el modelo de usuario
 const userSchema = new mongoose.Schema({
     nombre: { type: String, required: true },
