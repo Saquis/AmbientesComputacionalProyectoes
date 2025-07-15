@@ -50,3 +50,7 @@ Usar mensajes de commit claros
 Crear carpetas según sea necesario (/css, /js, etc.)
 
 Mantener el código y los nombres de archivos organizados
+
+
+
+-- Archivo de protección
