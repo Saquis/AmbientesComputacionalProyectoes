@@ -3,7 +3,7 @@
 /* Estilo global */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #85b9e8;
     margin: 0;
     padding: 0;
 }
@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
 }

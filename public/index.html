@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="css/styles_login.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="main-navbar">
+        <a href="#" class="logo">Pet Matcher</a>
+        <div class="nav-links">
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Contacto</a>
+        </div>
+    </nav>
+
     <section id="login">
         <h1>Iniciar Sesión</h1>
         <form id="login-form">
@@ -16,20 +26,13 @@
         </form>
         <p><a href="#" id="open-register">Registrarse</a></p>
     </section>
+    <br><br>
 
-    <!-- Modal de Registro -->
-    <div id="register-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Registro de Usuario</h2>
-            <form id="register-form">
-                <input type="text" id="register-nombre" placeholder="Nombre" required>
-                <input type="email" id="register-email" placeholder="Correo Electrónico" required>
-                <input type="password" id="register-password" placeholder="Contraseña" required>
-                <button type="submit">Registrar</button>
-            </form>
-        </div>
-    </div>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2025 Pet Matcher. Todos los derechos reservados.</p>
+        <p>Síguenos en <a href="#" style="color: white; text-decoration: underline;">Redes Sociales</a></p>
+    </footer>
 
     <script src="js/login.js"></script>
 </body>

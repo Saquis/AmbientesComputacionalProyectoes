@@ -1,68 +1,64 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* Estilos básicos para el navbar */
+.main-navbar {
+    background-color: #4CAF50; /* Un color verde amigable para mascotas */
+    padding: 15px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.main-navbar .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.main-navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+.main-navbar .nav-links a:hover {
+    color: #075219; /* Un verde más claro al pasar el ratón */
+}
+
+/* Estilos básicos para el footer */
+.main-footer {
+    background-color: #4CAF50; /* Un color oscuro para el footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Empuja el footer hacia abajo si el contenido es corto */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+.main-footer p {
     margin: 0;
-    padding: 20px;
+    font-size: 0.9em;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+/* Ajuste para el cuerpo para que el footer se pegue abajo */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* --- CAMBIO AQUÍ: Color de fondo sólido --- */
+    background-color: #85b9e8; /* Un color azul claro muy suave */
+    /* ------------------------------------------- */
+}
+/* Ajuste para el contenido principal para que ocupe el espacio restante */
+#login {
+    flex-grow: 1; /* Permite que la sección de login ocupe el espacio disponible */
+    display: flex; /* Para centrar el contenido de login si es necesario */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Añadir padding para que no se pegue a los bordes */
 }
 
-form {
-    max-width: 300px;
-    margin: 50px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-input, button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-p {
-    text-align: center;
-}
-
+/* Asegurarse de que el modal no se vea afectado por flex-grow */
 .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 400px;
-}
-
-.close {
-    float: right;
-    font-size: 28px;
-    cursor: pointer;
+    flex-grow: 0;
 }
