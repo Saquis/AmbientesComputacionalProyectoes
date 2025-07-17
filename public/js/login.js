@@ -63,3 +63,14 @@ document.getElementById('register-form').addEventListener('submit', async (e) =>
         alert(data.error);
     }
 });
+
+// Logout
+const logoutBtn = document.getElementById('logout-btn');
+
+if (logoutBtn) {
+    logoutBtn.addEventListener('click', () => {
+        localStorage.removeItem('token'); // Elimina el token del LocalStorage
+        alert('Sesión cerrada correctamente.');
+        window.location.href = 'index.html'; // Redirige al login
+    });
+}

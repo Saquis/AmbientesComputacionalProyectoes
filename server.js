@@ -24,7 +24,7 @@ app.use('/uploads', express.static('uploads'));
 
 
 // Conexión a MongoDB
-mongoose.connect('mongodb://192.168.100.49:27017/pet-matcher', {
+mongoose.connect('mongodb://host.docker.internal:27017/pet-matcher', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
